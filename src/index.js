@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// please note that the following is based on the architecture walkthrough from the freeCodeCamp tutorial for this clone. -> denotes folder
+
+// client side rendered app: react
+// -> database is Firebase
+// -> react-loading-skeleton
+// tailwind
+
+// architecture (folder structure)
+  // src
+    // -> components
+    // -> contants
+    // -> context
+    // -> helpers
+    // -> hooks
+    // -> pages
+    // -> lib (firebase is also going to live here)
+    // -> services (firebase functions here)
+    // -> styles (tailwind (app/tailwind))
